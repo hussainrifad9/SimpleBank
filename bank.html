@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto my-5">
+    <main>
+        <h1 class=" my-5 text-3xl	text-center	font-semibold">Alpha Bank</h1>
+        <h3 class="text-center font-semibold">Let's get some money</h2>
+    </main>
+    <section>
+        <div class="mt-8 text-2xl font-semibold grid grid-cols-3 gap-x-20 ">
+            <div class="p-3 rounded bg-zinc-600">
+                <h1>Deposite</h1>
+                <h3 >$<span id="last-deposite">00</span></h3>
+            </div>
+            <div  class="p-3 rounded bg-emerald-800">
+                <h1>Withdraw</h1>
+                <h3 >$<span id="last-withdraw">00</span></h3></div>
+            <div  class="p-3 rounded bg-orange-600">
+                <h1>Balance</h1>
+                <h3>$ <span id="balance">00</span> </h3>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-2  mt-10 gap-x-20">
+
+        <div class=" flex flex-col md:flex-row  justify-between font-semibold text-xl rounded p-7 bg-blue-300">
+            <input  id="deposite-money" class="rounded" type="text" placeholder="  Enter amount">
+            <button id="deposite" class="bg-blue-800 p-1 rounded ml-10">deposite</button>
+        </div>
+
+        <div class=" flex flex-col md:flex-row justify-between font-semibold text-xl rounded p-7 bg-blue-800">
+            <input id ="withdraw-money" class="rounded" type="text" placeholder="  Enter amount">
+            <button id="withdraw" class="bg-blue-300 p-1 rounded ml-10">Withdraw</button>
+        </div>
+
+        </div>
+    </section>
+
+    <script src="javascript/bank.js"> </script>
+</body>
+
+</html>
